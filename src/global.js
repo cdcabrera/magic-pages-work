@@ -1,3 +1,4 @@
+const { join } = require('path');
 /**
  * Console output colors
  *
@@ -17,4 +18,15 @@ const color = {
   YELLOW: '\x1b[33m'
 };
 
-module.exports = { color };
+/**
+ * Set context path
+ *
+ * @type {string}
+ * @private
+ */
+const contextPath = (global._MAGIC_PAGES_WORK_CONTEXT_PATH =
+  (process.env.NODE_ENV === 'test' && join('..', 'src', '__fixtures__')) ||
+  (process.env.NODE_ENV === 'development' && join(__dirname, './__fixtures__')) ||
+  process.cwd());
+
+module.exports = { color, contextPath };
