@@ -1,7 +1,9 @@
 {
   "language": "en",
   "words": [
+    "apidevtools",
     "codecov",
-    "NOCOLOR"
+    "nocolor",
+    "openapi"
   ]
 }

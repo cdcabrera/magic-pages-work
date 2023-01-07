@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ymlJsonParser should attempt to parse a Swagger spec file: swagger 1`] = `
+[
+  {
+    "content": undefined,
+    "output": undefined,
+    "source": "../src/__fixtures__/petStoreSwagger.yml",
+  },
+]
+`;

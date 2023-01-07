@@ -14,5 +14,24 @@ exports[`Global should return specific properties: specific properties 1`] = `
     "WHITE": "[37m",
     "YELLOW": "[33m",
   },
+  "consoleMessage": {
+    "error": [Function],
+    "info": [Function],
+    "log": [Function],
+    "success": [Function],
+    "warn": [Function],
+  },
+  "contextPath": "../src/__fixtures__",
+  "defaults": {
+    "PARSE_METHOD": "dereference",
+    "PORT": 5000,
+    "RESPONSE_CACHE": 60000,
+    "RESPONSE_CACHE_SIZE": 100,
+    "RESPONSE_HTTP_STATUS": [
+      199,
+      300,
+    ],
+    "RESPONSE_TIME": 0,
+  },
 }
 `;

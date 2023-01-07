@@ -2,6 +2,14 @@ const { existsSync, mkdirSync, readFileSync, rmSync, writeFileSync } = require('
 const crypto = require('crypto');
 const { extname, join, resolve } = require('path');
 
+jest.mock('console', () => ({
+  ...jest.requireActual('console'),
+  error: (...args) => `<console.error>${JSON.stringify(args)}</console.error>`,
+  info: (...args) => `<console.info>${JSON.stringify(args)}</console.info>`,
+  log: (...args) => `<console.log>${JSON.stringify(args)}</console.log>`,
+  warn: (...args) => `<console.warn>${JSON.stringify(args)}</console.warn>`
+}));
+
 jest.mock('child_process', () => ({
   ...jest.requireActual('child_process'),
   execSync: (...args) => `<execSync>${JSON.stringify(args)}</execSync>`

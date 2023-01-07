@@ -1,7 +1,3 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Magic Pages Work should return pass-through values: Magic Pages Work 1`] = `
-{
-  "version": "lorem-ipsum",
-}
-`;
+exports[`Magic Pages Work should return pass-through values: Magic Pages Work 1`] = `Promise {}`;
